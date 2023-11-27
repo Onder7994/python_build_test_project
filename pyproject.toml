@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "test_project"
+version = "0.1.1"
+description = "Test packages"
+authors = ["Trusikhin Andrei"]
+
+[build-system]
+requires = ["poetry-core>=1.0.0", "poetry-dynamic-versioning>=1.0.0,<2.0.0"]
+build-backend = "poetry_dynamic_versioning.backend"
+
+[tool.poetry.dependencies]
+python = ">=3.8"
+pyyaml = "^6.0.0"
+
+[tool.poetry.scripts]
+ci-gen = "cmd_test.main:main"
+
+
+[[tool.poetry.source]]
+name = "gitlab_test_project"
+url = "https://<you_gitlab_domain>/api/v4/projects/<CI_PROJECT_ID/packages/pypi"
