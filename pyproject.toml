@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "test_project"
-version = "0.1.1"
+version = "0.1.2"
 description = "Test packages"
 authors = ["Trusikhin Andrei"]
 
@@ -13,7 +13,7 @@ python = ">=3.8"
 pyyaml = "^6.0.0"
 
 [tool.poetry.scripts]
-ci-gen = "cmd_test.main:main"
+cmd_test = "test_package.main:main"
 
 
 [[tool.poetry.source]]
