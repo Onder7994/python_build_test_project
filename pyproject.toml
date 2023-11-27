@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "test_project"
+name = "test_package"
 version = "0.1.2"
 description = "Test packages"
 authors = ["Trusikhin Andrei"]
